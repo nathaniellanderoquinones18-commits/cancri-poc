@@ -1,10 +1,17 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Cancri SP Test</title>
+</head>
 <body>
-<h1>Cancri SP Test</h1>
-<script>
-fetch("https://webhook.site/27198d88-9783-4c44-8b39-e9f3b260c317?js=executed");
-</script>
+  <h1>Cancri SP Test</h1>
+
+  <script>
+    document.body.innerHTML += "<p id='loaded'>BOT_JS_RUNNING</p>";
+
+    fetch("https://webhook.site/27198d88-9783-4c44-8b39-e9f3b260c317?js=executed")
+      .catch(e => {});
+  </script>
 </body>
 </html>
